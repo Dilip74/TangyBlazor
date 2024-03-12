@@ -1,7 +1,25 @@
 ﻿@page "/"
+@inject IJSRuntime JSRuntime
 
 <PageTitle>Home</PageTitle>
 
 <h1>Hello, world!</h1>
 
 Welcome to your new app Dilip.
+
+<button onclick="multiplyNumbers(3,6)">Click Me</button>
+
+<RazorClassLibrary1.Component1></RazorClassLibrary1.Component1>
+
+<script>
+    function multiplyNumbers(a, b) {
+        return a * b;
+    }
+</script>
+
+@code{
+    // public async Task CallJavaScriptMethod()
+    // {
+    //     JSRuntime.InvokeAsync<int>("multiplyNumbers", 5, 3);
+    // }
+}

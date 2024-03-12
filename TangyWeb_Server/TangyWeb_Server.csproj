@@ -6,4 +6,8 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="RazorClassLibrary1" Version="1.0.0" />
+  </ItemGroup>
+
 </Project>
